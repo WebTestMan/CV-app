@@ -1,3 +1,6 @@
 .header {
-    color: aqua;
+  color: var(--main-text-colour);
+  background-color: var(--main-background-colour);
+  grid-row-start: 0;
+  grid-column-start: 0;
 }

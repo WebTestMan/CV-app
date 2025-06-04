@@ -1,0 +1,11 @@
+@media (max-width: 600px) {
+
+    body {
+      margin: 8px;
+    }
+
+    .pageLayout {
+        display: flex;
+        flex-direction: column;
+    }
+  }

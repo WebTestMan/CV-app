@@ -1,0 +1,12 @@
+.work-history-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.work-history-list{
+    padding: 2px;
+    margin: 4px;
+    border: solid 2px;
+    background-color: white;
+    border-radius: 8px;
+}
