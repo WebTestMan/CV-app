@@ -3,6 +3,7 @@ export default function CVapp() {
     <div>
       <div>
         <h3>Start you CV here...</h3>
+        <AddWorkHistory />
       </div>
     </div>
   );
@@ -18,11 +19,42 @@ export default function CVapp() {
 
 function AddWorkHistory() {
   return (
-    <div>
+    <div className="work-history-form">
       <form>
-        <label>Job Title</label>
-        <input />
+        <WorkHistoryForm />
+        {/* <label>Job Title</label>
+        <input /> */}
       </form>
     </div>
+  );
+}
+
+function WorkHistoryForm() {
+  const WorkHistoryFormFields = [
+    "Job Title",
+    "Employer Name",
+    "Date Started",
+    "Date Ended",
+    "Description",
+  ];
+
+  return (
+    <>
+      {WorkHistoryFormFields.map((work) => {
+        return (
+          <div>
+            <label>{work}</label>
+            <input />
+          </div>
+
+          //     <ListItem
+          //     key={work.id}
+          //     jobTitle={work.jobTitle}
+          //     startDate={work.startDate}
+          //     jobDesc={work.jobDesc}
+          //   />
+        );
+      })}
+    </>
   );
 }
