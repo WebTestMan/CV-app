@@ -1,6 +1,7 @@
 import React from "react";
 import { format } from "date-fns";
 import "../styles/workHistory.css";
+import PersonalInfo from "./personalInfo";
 
 function ListItem(props) {
   const id = props.id;
@@ -12,7 +13,8 @@ function ListItem(props) {
     <li key={id} className="work-history-list">
       <div>
         <h3>{jobTitle}</h3>
-        <p>{startDate}</p>
+        <p>Start Date: {startDate}</p>
+        <h4>Job Description:</h4>
         <p>{jobDesc}</p>
       </div>
       <br></br>
@@ -57,6 +59,7 @@ export default function WorkHistory() {
 
   return (
     <div>
+      <PersonalInfo />
       <h2>Work History: </h2>
       <List workHistoryArray={workHistoryIndexArray} />
     </div>
