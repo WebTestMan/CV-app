@@ -56,7 +56,7 @@ export default function WorkHistory() {
   ];
 
   return (
-    <div className=".work-history-form">
+    <div>
       <h2>Work History: </h2>
       <List workHistoryArray={workHistoryIndexArray} />
     </div>
